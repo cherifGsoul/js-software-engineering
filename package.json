@@ -1,0 +1,37 @@
+{
+  "name": "software-js",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test:acceptance:services": "cucumber-js",
+    "test:acceptance:domain": "cucumber-js -p domain",
+    "test:acceptance": "pnpm test:acceptance:domain && pnpm test:acceptance:services",
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@cucumber/cucumber": "^9.1.0",
+    "chai": "^4.3.7",
+    "jest": "^29.5.0"
+  },
+  "jest": {
+    "moduleFileExtensions": [
+      "js",
+      "json",
+      "ts"
+    ],
+    "rootDir": "test",
+    "testRegex": ".*\\.spec\\.js$",
+    "collectCoverageFrom": [
+      "**/*.(t|j)s"
+    ],
+    "coverageDirectory": "../coverage",
+    "testEnvironment": "node"
+  },
+  "dependencies": {
+    "uuid": "^9.0.0"
+  }
+}

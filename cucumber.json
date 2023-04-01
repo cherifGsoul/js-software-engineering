@@ -1,0 +1,20 @@
+{
+	"default": {
+	  "require": [
+		"features/**/application.js"
+	  ],
+	  "format": [
+		"summary"
+	  ],
+	  "publishQuiet": true
+	},
+	"domain": {
+		"require": [
+		  "features/**/domain.js"
+		],
+		"format": [
+		  "summary"
+		],
+		"publishQuiet": true
+	  }
+  }
